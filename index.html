@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title></title>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="css/module.css">
+<link rel="stylesheet" href="css/style.css">
+
+  
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/common.js"></script>
+
+<script src="js/index.js"></script>
+
+
+
+<script src="js/jquery.inview.min.js"></script>
+<script>
+$(function() {
+	$('.invew').on('inview', function(event, isInView) {
+		if (isInView) {
+			$(this).addClass('fire');
+		}
+	});
+	$('.invew_hasc').on('inview', function(event, isInView) {
+        if (isInView) {
+            $(this).addClass('fire');
+        }
+    });
+});
+</script>
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+<script src="//j.wovn.io/1" data-wovnio="key=2nZ06y" async></script>
+</head>
+
+<body id="front">
+<header>
+<div class="ov_wrap"></div>
+<div class="header_top flex_wrap_between">
+
+<p class="logo"><a href=""><img src="img/logo_data.png" alt="NTTDATA" class="pc"><img src="img/logo_data_sp.png" alt="NTTDATA" class="sp"></a></p>
+<ul>
+<!--<li><a href="" target="_blank">blog</a></li>-->
+<li><a href="https://www.facebook.com/WinActor/" target="_blank">facebook</a></li>
+<div class="search_btn">
+</div>
+<div class="serch_header">
+<form method="get" action="<?php bloginfo('url'); ?>">
+<input type="hidden" name="s" id="s">
+<input type="text" placeholder="キーワード入力" name="s" value="<?php echo $_GET['s']; ?>"><input type="image" src="img/icon_search.png">
+</form>
+</div>
+</ul>
+</div>
+
+<nav>
+<div class="inner_nav  flex_wrap_between">
+<h1 class="logo_win"><a href="index.html"><img src="img/logo_win.png" alt="RPAツールWinActor" class="pc"><img src="img/logo_win_sp.png" alt="RPAツールWinActor" class="sp"></a></h1>
+<div class="menu_btn">
+<p class="sp_nav_btn"><span id="panel-btn" class="panel-btn"><span id="panel-btn-icon" class="panel-btn-icon"></span></span></p>
+</div>
+<div class="clearfix pc_menu">
+<div class="inner_sp_menu">
+<!--<div class="sp_search">
+<form>
+<input type="text" placeholder="キーワード入力">
+<input type="image" src="img/btn_search_b.png">
+</form>
+</div>-->
+<ul class="main_nav">
+<li><span class="trigger arrow_under"><span>RPA・WAとは</span></span>
+<div class="sub_menu opmu">
+<p class="ta_r"><span class="btn_close_nav"><img src="img/btn_close_nav.png" alt="close"></span></p>
+<div class="sub_nav_body clearfix">
+<h2>RPA・WAとは</h2>
+<ul class="fl_box">
+<li><a href="column.html">RPAコラム</a></li>
+<li><a href="case.html">WA導入事例</a></li>
+</ul>
+</div>
+</div>
+</li><!--
+--><li><span class="trigger arrow_under"><span>製品情報</span></span>
+<div class="sub_menu opmu">
+<p class="ta_r"><span class="btn_close_nav"><img src="img/btn_close_nav.png" alt="close"></span></p>
+<div class="sub_nav_body clearfix">
+<h2>製品情報</h2>
+<ul class="fl_box">
+<li><a href="winactor.html">WinActor</a></li>
+<li><a href="windirector.html">WinDirector</a></li>
+</ul>
+</div>
+</div>
+</li><!--
+--><li><span class="trigger arrow_under"><span>導入する</span></span>
+<div class="sub_menu opmu">
+<p class="ta_r"><span class="btn_close_nav"><img src="img/btn_close_nav.png" alt="close"></span></p>
+<div class="sub_nav_body clearfix">
+<h2>導入する</h2>
+<ul class="fl_box">
+<li><a href="nttdata.html">NTTデータのサービス</a></li>
+<li><a href="shop.html">WinActor販売特約店一覧 </a></li>
+</ul>
+</div>
+</div>
+</li><!--
+--><li><a href="http://winactor.com/sales/">ご利用中の方</a></li><!--
+--><li><a href="faq.html">FAQ</a></li><!--
+--><li><a href="news.html">ニュース</a></li><!--
+--><li><a href="contact.html">製品のお問い合わせ</a></li>
+<span id="slide-line"></span>
+</ul>
+<!--<div class="search_btn trigger">
+</div>
+<div class="serch_header opmu">
+<form>
+<input type="text" placeholder="キーワード入力"><input type="button" value="検索">
+</form>
+</div>-->
+<ul class="sp_nav_w">
+<!--<li><a href="" target="_blank">blog</a></li>-->
+<li><a href="https://www.facebook.com/WinActor/" target="_blank">facebook</a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+</header>
+
+<div class="caution_mv flex_wrap">
+<div class="caution_icon"><span>重要なお知らせ</span></div>
+<a href=""><p><span class="date">2017/10/18</span><span class="text">NTTデータによる「WinActor」展示、注目のブースにああああああああああああああああああああああああ</span></p></a>
+</div>
+
+<div class="mv">
+<div class="hero">
+<div class="inner_hero">
+
+<div class="ttls">
+<h2><span>RPA</span>よ、<br>
+あとはよろしく。</h2>
+</div>
+
+<div class="area_slide">
+<ul class="multiple-item">
+<li>
+<a href="single.html">
+<div class="item_mv_slider">
+<p class="slide_head"><span class="date">2017/10/18</span><span class="cate">セミナー</span></p>
+<p class="ttl_slide">京葉銀行がNTTデータビジネスブレインズと連携し、RPAを使用した業務効率化に係る試行を開始します！</p>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="item_mv_slider">
+<p class="slide_head"><span class="date">2017/10/18</span><span class="cate">セミナー</span></p>
+<p class="ttl_slide">京葉銀行がNTTデータビジネスブレインズと連携し、RPAを使用した業務効率化に係る試行を開始します！</p>
+</div>
+</a>
+</li>
+<li>
+<a href="#" target="_blank">
+<div class="item_mv_slider">
+<p class="slide_head"><span class="date">2017/10/18</span><span class="cate">セミナー</span></p>
+<p class="ttl_slide">シャープマーケティングジャパン、ビジネスソリューション主催「AI&amp;ロボット ビジネス活用セミナー」登壇のご案内（開催日：2/16＠秋葉原UDX）</p>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="item_mv_slider">
+<p class="slide_head"><span class="date">2017/10/18</span><span class="cate">セミナー</span></p>
+<p class="ttl_slide">シャープマーケティングジャパン、ビジネスソリューション主催「AI&amp;ロボット ビジネス活用セミナー」登壇のご案内（開催日：2/16＠秋葉原UDX）</p>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="item_mv_slider">
+<p class="slide_head"><span class="date">2017/10/18</span><span class="cate">セミナー</span></p>
+<p class="ttl_slide">京葉銀行がNTTデータビジネスブレインズと連携し、RPAを使用した業務効率化に係る試行を開始します！</p>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="item_mv_slider">
+<p class="slide_head"><span class="date">2017/10/18</span><span class="cate">セミナー</span></p>
+<p class="ttl_slide">京葉銀行がNTTデータビジネスブレインズと連携し、RPAを使用した業務効率化に係る試行を開始します！</p>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div><!--/mv-->
+
+<div class="caution_body">
+<a href="" target="_blank"><p><span class="date">2017/10/18</span><span class="text">NTTデータによる「WinActor」展示、注目のブースにああああああああああああああああああああああああ</span></p></a>
+</div>
+
+
+<div class="section_top">
+<section class="inner_sec">
+<h2><span>What Can We Do?</span>RPAで解決します</h2>
+<p class="lead">RPAは日常の定型業務に関するあらゆる課題を解決します。普段の業務をRPAに任せることで、作業時間やコストの削減、業務の品質向上など、あらゆるメリットがあります。業界・業種を選ばず、簡単低コストで、すぐに働き方改革が始められます。</p>
+<ul class="flex_wrap_between col4 rpa invew_hasc">
+<li>
+<figure><img src="img/rpa_pic1.png" alt=""></figure>
+<h3>日々の定型作業にかかる時間と<br>
+コストを削減します</h3>
+<p>定常的に処理量が多い業務はもちろん、繁閑差のある業務の安定的稼働を実現します。ロボットに一度覚えさせてしまえば、辞めてしまうこともなく教育のコストも削減されます。大量のデータ投入はもちろん、繰り返しの多い作業やプロセスの長い作業もロボットに覚えさせて、人は付加価値の高い業務へシフトしましょう。</p>
+</li>
+<li>
+<figure><img src="img/rpa_pic2.png" alt=""></figure>
+<h3>作業ミスによるリスクや<br>
+追加稼働を削減します</h3>
+<p>繰り返しの作業、プロセスの多い作業のような処理量の多い業務や日々行う定常的な作業はプレッシャーや慣れによりミスが増えるものです。ロボットは1度覚えた作業の繰り返しや昼夜問わず同じ品質で作業を実施します。人が介入する箇所を局所化し必要作業に集中することで、ミスも稼働も削減します。</p>
+</li>
+<li>
+<figure><img src="img/rpa_pic3.png" alt=""></figure>
+<h3>業務で利用しているシステムを<br>
+改修せず業務改善を実現できます</h3>
+<p>日ごろ業務で利用しているアプリケーションはもちろん社内で利用しているシステムを改修することなく業務改善を行えます。業務改善を始めるにはライセンスを購入するだけ。低価格で業務改善をスタートできます。</p>
+</li>
+<li>
+<figure><img src="img/rpa_pic4.png" alt=""></figure>
+<h3>すぐに業務改善を<br>
+実施できます</h3>
+<p>業務に合わせたシステム改修やツール開発は不要です。現場担当者の改善要望に迅速に対応でき、PDCAを回しやすいソリューションで業界業種は問いません。</p>
+</li>
+</ul>
+
+<div class="flex_wrap_between btn_area3 invew_hasc">
+<p class="btn">
+<a href="column.html" class="fillter"><span>RPA・WAとは</span></a>
+</p>
+<p class="btn">
+<a href="case.html" class="fillter"><span>WA導入事例</span></a>
+</p>
+<p class="btn">
+<a href="faq.html" class="fillter"><span>FAQ</span></a>
+</p>
+</div>
+
+</section>
+</div>
+
+<div class="top_sec2 clearfix">
+<figure><img src="img/bg_about.jpg" alt=""></figure>
+<div class="inner_sec2">
+<section>
+<h2>WinActorとは</h2>
+<p>NTTグループで研究・利用を続け、技術とノウハウが詰まった、業務効率を支援するソフトウェア型ロボットです。<br>
+Windows上で操作可能なアプリケーション、個別の業務システムを利用した業務をシナリオ（ワークフロー）として学習し、ユーザのPC業務を自動化します。</p>
+</section>
+</div>
+</div>
+
+<div class="section_top">
+<section class="inner_sec">
+<h2><span>About Service</span>WinActorの特長</h2>
+<p class="lead">連携可能なシステムやアプリケーションが幅広い「WinActor」は、さまざまな業務の自動化をお手伝いします。難しい知識は不要、誰でも手軽に業務の改善ができるソフトウェア型ロボットです。「働き方改革」を「ずっと」お手伝いします。</p>
+<ul class="flex_wrap_between col3 about_top invew_hasc">
+<li>
+<figure><img src="img/icon_about1.png" alt=""></figure>
+<div class="ttl_wrap"><h3>ユーザ部門でも操作可能！</h3></div>
+<p>操作しやすいGUIを完備し、プログラミングせず自動化が可能です。システム開発の実務経験がなくても安心してお使いいただけます。また、純国産で完全日本語対応しております。（英語版（OfficeRobot）も販売しております）</p>
+</li>
+<li>
+<figure><img src="img/icon_about2.png" alt=""></figure>
+<div class="ttl_wrap"><h3>Windowsで操作可能なあらゆる<br>
+アプリケーションに対応！</h3></div>
+<p>IE、Office製品（Excel、Access、Word、Outlook等）はもちろん、ERPやOCR、ワークフロー（電子決済）、個別の業務システムまであらゆるアプリケーションの操作が可能です。</p>
+</li>
+<li>
+<figure><img src="img/icon_about3.png" alt=""></figure>
+<div class="ttl_wrap"><h3>PC1台から動作可能！</h3></div>
+<p>特別な環境構築は不要。PCへインストールすればすぐにお使いいただけます。インストール作業も、ファイルを実行していただくだけです。</p>
+</li>
+<li>
+<figure><img src="img/icon_about4.png" alt=""></figure>
+<div class="ttl_wrap"><h3>すぐに始められるコンパクト設計！</h3></div>
+<p>最初は自動記録を使用して、いつも通りPCで作業をするだけ。実現しやすい箇所から業務改善を始め、段階的に業務自動化を広げやすいパッケージになっております。</p>
+</li>
+<li>
+<figure><img src="img/icon_about5.png" alt=""></figure>
+<div class="ttl_wrap"><h3>日本全国安心の技術サポート！</h3></div>
+<p>NTTデータ、全国のパートナー企業がサポートをします。また、NTTデータの技術認定を受けた技術者や講師も輩出しており、導入後のフォローも安心です。</p>
+</li>
+<li>
+<figure><img src="img/icon_about6.png" alt=""></figure>
+<div class="ttl_wrap"><h3>手軽なコストでRPA導入可能！</h3></div>
+<p>手頃で充実したトライアルからスタートし、機能を体感していただけます。企業規模問わず、安心して業務効率化を始められます。</p>
+</li>
+</ul>
+</section>
+</div>
+
+<div class="section_top sec4">
+<section class="inner_sec">
+<h2><span>Case Study</span>事例紹介</h2>
+<ul class="flex_wrap_between col4 case invew_hasc">
+<li>
+<a href="single-case.html">
+<figure><img src="img/pic_case.jpg" alt="" class="bgFade"></figure>
+<div class="text_area">
+<div class="ttl_wrap"><h3>○○氏が教えるRPAの基礎知識</h3></div>
+<p class="mb_10">入社当初はメールやファイルサーバーといった基盤技術を担当していたけれど、2年目に異動。現在はセキュリティオ...</p>
+<p class="mb_10 date">2017/10/13</p>
+<p class="cate_list"><span>カテゴリ</span><span>カテゴリ</span></p>
+</div>
+</a>
+</li>
+<li>
+<a href="single-case.html">
+<figure><img src="img/pic_case.jpg" alt="" class="bgFade"></figure>
+<div class="text_area">
+<div class="ttl_wrap"><h3>WinActorは問題の発見から対策までをこなす事ができます。</h3></div>
+<p class="mb_10">入社当初はメールやファイルサーバーといった基盤技術を担当していたけれど、2年目に異動。現在はセキュリティオ...</p>
+<p class="mb_10 date">2017/10/13</p>
+<p class="cate_list"><span>カテゴリ</span><span>カテゴリ</span></p>
+</div>
+</a>
+</li>
+<li>
+<a href="single-case.html">
+<figure><img src="img/pic_case.jpg" alt="" class="bgFade"></figure>
+<div class="text_area">
+<div class="ttl_wrap"><h3>○○氏が教えるRPAの基礎知識</h3></div>
+<p class="mb_10">入社当初はメールやファイルサーバーといった基盤技術を担当していたけれど、2年目に異動。現在はセキュリティオ...</p>
+<p class="mb_10 date">2017/10/13</p>
+<p class="cate_list"><span>カテゴリ</span><span>カテゴリ</span></p>
+</div>
+</a>
+</li>
+<li>
+<a href="single-case.html">
+<figure><img src="img/pic_case.jpg" alt="" class="bgFade"></figure>
+<div class="text_area">
+<div class="ttl_wrap"><h3>○○氏が教えるRPAの基礎知識</h3></div>
+<p class="mb_10">入社当初はメールやファイルサーバーといった基盤技術を担当していたけれど、2年目に異動。現在はセキュリティオ...</p>
+<p class="mb_10 date">2017/10/13</p>
+<p class="cate_list"><span>カテゴリ</span><span>カテゴリ</span></p>
+</div>
+</a>
+</li>
+</ul>
+<p class="btn btn_def invew">
+<a href="case.html" class="fillter"><span>導入事例一覧を見る</span></a>
+</p>
+</section>
+</div>
+
+<div id="particles-js" class="section_top">
+<section class="inner_sec">
+<h2><span>Demonstration</span>WinActorデモ動画</h2>
+<link rel="stylesheet" href="css/lity.min.css">
+<script src="js/lity.min.js"></script>
+<ul class="flex_wrap col4 movies invew_hasc">
+<li>
+<figure><a href="https://www.youtube.com/watch?v=JMcXNuu07OU&feature=youtu.be&showinfo=0" data-lity="data-lity"><span><img src="http://i.ytimg.com/vi/JMcXNuu07OU/maxresdefault.jpg" alt=""></span></a></figure>
+<div class="text_area">
+<h3>導入イメージ [RPAとは1]</h3>
+<p class="disc">WinActorが指示書作成業務を代行・自動化</p>
+</div>
+</li>
+<li>
+<figure><a href="https://www.youtube.com/watch?v=Fm2ZbLlzCQk&feature=youtu.be&showinfo=0" data-lity="data-lity"><span><img src="http://i.ytimg.com/vi/Fm2ZbLlzCQk/maxresdefault.jpg" alt=""></span></a></figure>
+<div class="text_area">
+<h3>導入イメージ [RPAとは2]</h3>
+<p class="disc">WinActorがOCRを駆使し顧客にDMを送信する業務を代行・自動化</p>
+</div>
+</li>
+<li>
+<figure><a href="https://www.youtube.com/watch?v=1H6iNLmBOLI&feature=youtu.be&showinfo=0" data-lity="data-lity"><span><img src="http://i.ytimg.com/vi/1H6iNLmBOLI/maxresdefault.jpg" alt=""></span></a></figure>
+<div class="text_area">
+<h3>シナリオ作成イメージ [RPAとは3]</h3>
+<p class="disc">WinActorが録画機能により操作シナリオ(アルゴリズムルール)を自動</p>
+<p class="ta_c"><a href="https://www.youtube.com/watch?v=5TfVg7kHwQA" target="_blank">English</a></p>
+</div>
+</li>
+<li>
+<figure><a href="https://www.youtube.com/watch?v=jCPs7ddrZoc&feature=youtu.be&showinfo=0" data-lity="data-lity"><span><img src="http://i.ytimg.com/vi/jCPs7ddrZoc/maxresdefault.jpg" alt=""></span></a></figure>
+<div class="text_area">
+<h3>シナリオ作成イメージ [RPAとは4]</h3>
+<p class="disc">WinActorはプログラミング知識不要！GUIで編集可</p>
+<p class="ta_c"><a href="https://youtu.be/nB3nHGWxsBM" target="_blank">English</a></p>
+</div>
+</li>
+
+</ul>
+
+</section>
+</div>
+
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+<!-- count particles -->
+
+<div class="section_top">
+<section class="inner_sec">
+<h2><span>Total Solution</span>トータルソリューション</h2>
+<p class="lead">NTTデータは、WinActorをはじめ、業務の自動化をお手伝いするソリューションをトータルでご提案します。<br>
+業務を一貫して自動化、管理することができます。</p>
+
+
+<div class="flex_wrap_between solution">
+<div class="sol_col">
+<figure><img src="img/pic_solution.jpg" alt=""></figure>
+</div>
+<div class="sol_col2">
+<ul class="flex_wrap_between">
+<li>
+<h3>WinActor</h3>
+<p>Windows上で行うあらゆる業務をロボットとして記録することで、人間に代わり自動で実行します。<br>
+Office等のアプリケーションをはじめ、BPMやERP等の既存の社内システムと連携することも可能です。</p>
+<p class="link_text"><a href="winactor.html">詳しく見る</a></p>
+</li>
+<li>
+<h3>パートナー'sソリューション</h3>
+<p>NTTデータのWinActor特約店は現在100社を超え、地域や業種問わず多種多様な企業に協力いただいております。BPMツールとの連携やRPA人材派遣等、各社のソリューションやサービスと連携しての、WinActorのご提案も可能です。</p>
+<p class="link_text"><a href="shop.html">詳しく見る</a></p>
+</li>
+<li>
+<h3>WinDirector</h3>
+<p>WinActorを管理統制するロボットです。シナリオの管理やロボットの統制を行い、ロボットのスケジュール実行や多重実行も可能となります。また、ロボットの実行結果やステータスの確認も簡単です。</p>
+<p class="link_text"><a href="windirector.html">詳しく見る</a></p>
+</li>
+<li>
+<h3>Prexifort-OCR</h3>
+<p>紙媒体の情報を、パソコンで扱えるテキストデータに変換するソフトウェアです。請求書などの紙からシステム転記まで、WinActorと連動して業務を一貫して自動化することが可能です。</p>
+<p class="link_text"><a href="http://prexi.jp/" target="_blank">詳しく見る</a></p>
+</li>
+</ul>
+</div>
+</div>
+
+</section>
+</div>
+
+<div class="section_top sec4">
+<section class="inner_sec">
+<h2><span>FAQ</span>よくあるご質問</h2>
+<ul class="flex_wrap_between col2 list_faq_picup invew_hasc">
+<li>
+<h3>質問テキストが入ります。</h3>
+<div class="text_area">
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</div>
+</li>
+<li>
+<h3>質問テキストが入ります。</h3>
+<div class="text_area">
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</div>
+</li>
+<li>
+<h3>質問テキストが入ります。</h3>
+<div class="text_area">
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</div>
+</li>
+<li>
+<h3>質問テキストが入ります。</h3>
+<div class="text_area">
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</div>
+</li>
+</ul>
+
+<ul class="list_faq_toggle invew">
+<li>
+<h3 class="trigger2">質問テキストが入ります。</h3>
+<div class="text_area acordion">
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</div>
+</li>
+<li>
+<h3 class="trigger2">質問テキストが入ります。</h3>
+<div class="text_area acordion">
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</div>
+</li>
+<li>
+<h3 class="trigger2">質問テキストが入ります。</h3>
+<div class="text_area acordion">
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</div>
+</li>
+<li>
+<h3 class="trigger2">質問テキストが入ります。</h3>
+<div class="text_area acordion">
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</div>
+</li>
+</ul>
+<p class="btn btn_def invew">
+<a href="faq.html" class="fillter"><span>よくあるご質問</span></a>
+</p>
+</section>
+</div>
+
+<div class="section_top">
+<ul class="inner_outlo flex_wrap_between">
+<li>
+<figure><img src="img/bn_outlo1.jpg" alt=""></figure>
+<p class="dicription">OCRソフトウェア「Prexifort-OCR」と組み合わせることで、注文書や請求書の画像化・テキストデータ化、データの<br>
+入出力処理自動化なども可能になります。</p>
+<p><a href="http://prexi.jp/" target="_blank">日本語版へ</a><a href="http://prexi.jp/en/" target="_blank">英語版へ</a><a href="http://prexi.jp/cn/" target="_blank">中国版へ</a></p>
+</li>
+<li>
+<figure><img src="img/bn_outlo2.jpg" alt=""></figure>
+<p class="dicription">NTTデータグループは、次代に向けた持続可能な社会を構築するために、お客様や社会全体の環境負荷を低減させる
+グリーンITソリューションをご提供します。</p>
+<p><a href="http://www.nttdata.com/jp/ja/green_it/index.html" target="_blank">詳しく見る</a></p>
+</li>
+</ul>
+</div>
+
+<footer>
+<div class="btn_totop"></div>
+<div class="inner_footer">
+<div class="flex_wrap_between">
+<div>
+<h2>お問い合わせ</h2>
+<p>株式会社NTTデータ　第二公共事業本部 第四公共事業部 / 第二統括部 RPAソリューション担当</p>
+</div>
+<div class="ft_btn_area">
+<p class="btn btn_ft">
+<a href=""><span>製品のお問い合わせ</span></a>
+</p>
+</div>
+</div>
+
+<div class="ft_bottom flex_wrap_between">
+<ul>
+<li><a href="http://www.nttdata.com/jp/ja/" target="_blank">運営会社について</a></li>
+<li><a href="http://www.nttdata.com/jp/ja/privacy_policy/index.html" target="_blank">個人情報保護規定</a></li>
+<li><a href="">特約店契約のお問い合わせ</a></li>
+<li><a href="http://winactor.com/sales/" class="login">販売パートナー様ログイン</a></li>
+</ul>
+<p class="copy">Copyright © 2017-  NTT DATA Corporation</p>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
